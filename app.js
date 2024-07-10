@@ -12,7 +12,7 @@ console.log(bigText);
 //     return isValid;
 // }
 function isValidNumber(phoneNumber) {
-    return phoneNumber.startsWith("+7") && phoneNumber.length === 13;
+    return phoneNumber.startsWith("+7") && phoneNumber.length === 12;
 }
 
 // function isValidNumber(phoneNumber) {
