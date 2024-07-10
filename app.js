@@ -6,10 +6,13 @@ let text = "Hello my name is Azer";
 let bigText = capitalizeWords(text);
 console.log(bigText); 
 // TASK 2
+// function isValidNumber(phoneNumber) {
+//     let regex = /^\+7\d{11}$/;
+//     let isValid = regex.test(phoneNumber);
+//     return isValid;
+// }
 function isValidNumber(phoneNumber) {
-    let regex = /^\+7\d{11}$/;
-    let isValid = regex.test(phoneNumber);
-    return isValid;
+    return phoneNumber.startsWith("+7") && phoneNumber.length === 13;
 }
 
 // function isValidNumber(phoneNumber) {
