@@ -7,23 +7,24 @@ let bigText = capitalizeWords(text);
 console.log(bigText); 
 // TASK 2
 // function isValidNumber(phoneNumber) {
-//     let regex = /^\+7\d{11}$/;
+//     let regex = /^\+7\d{10}$/;
 //     let isValid = regex.test(phoneNumber);
 //     return isValid;
 // }
+
 function isValidNumber(phoneNumber) {
     return phoneNumber.startsWith("+7") && phoneNumber.length === 12;
 }
 
 // function isValidNumber(phoneNumber) {
-//     let regex = /\+\d{11}/;
+//     let regex = /\+\d{10}/;
 //     let isValid = regex.test(phoneNumber);
 //     return isValid;
 // }
 
-let phone1 = "+712345678900";
+let phone1 = "+71234567890";
 let phone2 = "71234567890";
-let phone3 = "+71234567890";
+let phone3 = "+712345678900";
 let phone4 = "+812345678900";
 console.log(isValidNumber(phone1)); // true
 console.log(isValidNumber(phone2)); // false
